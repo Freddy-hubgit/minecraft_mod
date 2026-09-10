@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "de.freddy.glitchdeath.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "DamageSourceMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

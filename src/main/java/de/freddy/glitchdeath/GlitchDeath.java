@@ -42,7 +42,7 @@ public final class GlitchDeath implements ModInitializer {
                         .then(Commands.literal("name")
                                 .executes(context -> setMode(context.getSource(), "name")))
                         .then(Commands.literal("random")
-                                .executes(context -> setMode(context.getSource(), "random"))));
+                                .executes(context -> setMode(context.getSource(), "random")))));
     }
 
     private static ServerPlayer getPlayer(CommandSourceStack source) {

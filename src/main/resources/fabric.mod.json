@@ -1,3 +1,4 @@
+```json
 {
   "schemaVersion": 1,
   "id": "glitch-death",
@@ -9,17 +10,14 @@
   ],
   "license": "MIT",
   "environment": "*",
-
   "entrypoints": {
     "main": [
       "de.freddy.glitchdeath.GlitchDeath"
     ]
   },
-
   "mixins": [
     "glitch-death.mixins.json"
   ],
-
   "depends": {
     "fabricloader": ">=0.19.3",
     "fabric-api": ">=0.116.17",

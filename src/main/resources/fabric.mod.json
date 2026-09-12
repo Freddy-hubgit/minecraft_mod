@@ -3,13 +3,23 @@
   "id": "glitch-death",
   "version": "${version}",
   "name": "Glitch Death",
-  "description": "Lets the server choose normal-name, glitch, or random-name replacements for invisible killers while preserving the vanilla death message.",
-  "authors": ["Freddy"],
+  "description": "Replaces the names of invisible killers while preserving the vanilla death message.",
+  "authors": [
+    "Freddy"
+  ],
   "license": "MIT",
   "environment": "server",
+
+  "entrypoints": {
+    "main": [
+      "de.freddy.glitchdeath.GlitchDeath"
+    ]
+  },
+
   "mixins": [
     "glitch-death.mixins.json"
   ],
+
   "depends": {
     "fabricloader": ">=0.19.3",
     "fabric-api": ">=0.116.17",

@@ -90,10 +90,7 @@ public abstract class DamageSourceMixin {
             }
 
             Component replacement =
-                    GlitchDeath.getReplacement(
-                            serverKiller,
-                            serverVictim
-                    );
+                    GlitchDeath.getReplacement(serverKiller);
 
             args[i] = replacement;
 

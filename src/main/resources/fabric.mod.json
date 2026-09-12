@@ -1,4 +1,4 @@
-```json
+
 {
   "schemaVersion": 1,
   "id": "glitch-death",
@@ -25,4 +25,4 @@
     "java": ">=21"
   }
 }
-```
+

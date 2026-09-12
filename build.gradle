@@ -1,6 +1,5 @@
-```gradle
 plugins {
-    id 'net.fabricmc.fabric-loom-remap' version "${loom_version}"
+    id 'net.fabricmc.loom-remap' version "${loom_version}"
     id 'maven-publish'
 }
 
@@ -12,24 +11,21 @@ base {
 }
 
 repositories {
-    maven {
-        url = "https://maven.fabricmc.net/"
-    }
+    maven { url = "https://maven.fabricmc.net/" }
 }
 
 dependencies {
     minecraft "com.mojang:minecraft:${project.minecraft_version}"
     mappings loom.officialMojangMappings()
-
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 }
 
 processResources {
-    inputs.property "version", project.version
-
+    def version = project.version
+    inputs.property "version", version
     filesMatching("fabric.mod.json") {
-        expand "version": project.version
+        expand "version": version
     }
 }
 
@@ -42,8 +38,3 @@ java {
     sourceCompatibility = JavaVersion.VERSION_21
     targetCompatibility = JavaVersion.VERSION_21
 }
-
-jar {
-    inputs.property "archivesName", project.base.archivesName
-}
-```

@@ -1,3 +1,4 @@
+```json
 {
   "schemaVersion": 1,
   "id": "glitch-death",
@@ -8,7 +9,7 @@
     "Freddy"
   ],
   "license": "MIT",
-  "environment": "server",
+  "environment": "*",
 
   "entrypoints": {
     "main": [
@@ -27,3 +28,4 @@
     "java": ">=21"
   }
 }
+```
